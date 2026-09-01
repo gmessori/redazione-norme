@@ -218,8 +218,9 @@ Giulio Messori.
 
 ## Licenza
 
-[CC BY 4.0](LICENSE). Riuso libero, anche commerciale, con attribuzione a Giulio
-Messori.
+[CC BY-NC 4.0](LICENSE). Riuso, modifica e redistribuzione liberi per finalità
+non commerciali, con attribuzione a Giulio Messori. Per usi commerciali si può
+chiedere un'autorizzazione all'autore.
 
 I testi normativi citati sono atti ufficiali dello Stato, liberamente
 utilizzabili ai sensi dell'articolo 5 della legge 22 aprile 1941, n. 633.
