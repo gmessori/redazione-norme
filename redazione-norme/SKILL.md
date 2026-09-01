@@ -1,40 +1,52 @@
 ---
 name: redazione-norme
-description: Redige e revisiona testi normativi statali italiani secondo le regole di drafting della Presidenza del Consiglio (circolari PCM 20 aprile e 2 maggio 2001, direttiva 26 febbraio 2009, DPCM 169/2017, legge 167/2025) — disegni di legge, decreti-legge, decreti legislativi, regolamenti, testi unici, novelle, abrogazioni. Da usare quando l'utente chiede di scrivere, abbozzare, impostare, rivedere o "mettere in forma" un articolato, un articolo, un comma, una norma, un emendamento, un preambolo, un visto, una clausola di copertura o di entrata in vigore; quando incolla una bozza chiedendo se "sta in piedi" o se rispetta le regole di drafting; quando chiede come si cita un atto, come si scrive una novella, come si numera un articolo aggiuntivo, come si abroga una disposizione; quando chiede la relazione illustrativa, la relazione tecnica, l'ATN o l'AIR. Non per email, articoli, contratti, atti amministrativi o leggi regionali.
+description: Redige e revisiona testi normativi statali italiani secondo le regole di tecnica legislativa vigenti (legge 400/1988, circolari PCM 20 aprile e 2 maggio 2001, direttive PCM 2008 e 2009, legge 196/2009, DPCM 169/2017, DPCM 30 ottobre 2024, legge 167/2025) — disegni di legge, decreti-legge, decreti legislativi, regolamenti, testi unici, novelle, abrogazioni. Da usare quando l'utente chiede di scrivere, abbozzare, impostare, rivedere o "mettere in forma" un articolato, un articolo, un comma, una norma, un emendamento, un preambolo, un visto, una clausola di copertura o di entrata in vigore; quando incolla una bozza chiedendo se "sta in piedi" o se rispetta le regole di drafting; quando chiede come si cita un atto, come si scrive una novella, come si numera un articolo aggiuntivo, come si abroga una disposizione; quando chiede la relazione illustrativa, la relazione tecnica, l'ATN o l'AIR. Non per email, articoli, contratti, atti amministrativi o leggi regionali.
 ---
 
 # Redazione di testi normativi statali
 
-Questa skill applica le regole di drafting che il DAGL usa come parametro per
-ammettere uno schema alla riunione preparatoria del Consiglio dei ministri. Non
-sono consigli stilistici: sono i criteri con cui il testo verrà letto, corretto
-d'ufficio o rimandato indietro. Scrivere già conformi evita il giro di ritorno.
+Questa skill applica le regole di tecnica legislativa che il DAGL usa come
+parametro nell'istruttoria degli atti normativi del Governo. Non sono consigli
+stilistici: sono i criteri con cui il testo verrà letto e, se necessario,
+coordinato d'ufficio. Scrivere già conformi evita il giro di ritorno.
 
-## Fonti
+## Fonti di redazione
 
-L'impianto viene da tre atti che vanno letti insieme:
+Il corpo di regole applicato ha rango diverso — leggi dello Stato, circolari
+della Presidenza del Consiglio, direttive e DPCM — e si è stratificato nel tempo.
+In ordine cronologico:
 
-- **Circolare PCM 20 aprile 2001** (GU 97/2001) — le regole tecniche, concordate
-  con i Presidenti di Camera e Senato. È il testo vincolante, distingue *regole*
-  da *raccomandazioni*.
-- **Circolare PCM 2 maggio 2001, n. 1/1.1.26/10888/9.92** — la "Guida alla
-  redazione dei testi normativi" del DAGL: sviluppa le regole in modo analitico
-  e le estende ai regolamenti, aggiungendo la parte sostanziale.
-- **Direttiva PCM 26 febbraio 2009** — l'istruttoria: cosa deve accompagnare lo
-  schema perché sia iscrivibile al preconsiglio.
+- **Legge 23 agosto 1988, n. 400** — tipologia e limiti degli atti del Governo
+  (artt. 14, 15, 17, 17-bis) e chiarezza dei testi normativi (art. 13-bis:
+  principio generale non derogabile se non in modo esplicito).
+- **Circolare PCM 20 aprile 2001** (GU n. 97/2001) — le regole tecniche,
+  elaborate d'intesa con i Presidenti di Camera e Senato. Distingue espressamente
+  *regole* e *raccomandazioni*.
+- **Circolare PCM 2 maggio 2001, n. 1/1.1.26/10888/9.92** — la «Guida alla
+  redazione dei testi normativi» del DAGL: sviluppa analiticamente le regole, le
+  estende ai regolamenti e aggiunge la parte sostanziale, con i modelli di
+  preambolo.
+- **Direttiva PCM 10 settembre 2008** — griglia dell'analisi tecnico-normativa.
+- **Direttiva PCM 26 febbraio 2009** — istruttoria: cosa accompagna lo schema
+  perché sia iscrivibile al preconsiglio.
+- **Legge 31 dicembre 2009, n. 196** — copertura finanziaria, relazione tecnica,
+  clausole di neutralità.
+- **DPCM 15 settembre 2017, n. 169** — AIR, VIR e consultazione.
+- **DPCM 30 ottobre 2024** e **circolare DAGL 14 novembre 2024** — modello ATN e
+  criteri per limitare il rinvio a provvedimenti attuativi.
+- **Legge 10 novembre 2025, n. 167** — semplificazione e qualità della
+  normazione.
 
-Non esiste una guida più recente: verificato a settembre 2026 che né la Camera né
-la Presidenza del Consiglio hanno sostituito le circolari del 2001, e che il
-volume DAGL è fermo all'aggiornamento del 1° dicembre 2024. Ma la Guida ha
-venticinque anni e cita norme abrogate (lire, legge 468/1978, legge comunitaria,
-Comunità europee), e dopo il volume DAGL è intervenuta la **legge 10 novembre
-2025, n. 167** sulla semplificazione e la qualità della normazione, che tocca sia
-la redazione sia le relazioni.
+Ricognizione aggiornata a settembre 2026: non risultano circolari di drafting
+successive a quelle del 2001, e il volume DAGL «L'attività normativa del Governo»
+è aggiornato al 1° dicembre 2024.
 
+Poiché il corpus si è formato nell'arco di quasi quarant'anni, alcuni
+riferimenti contenuti nelle fonti più risalenti sono stati superati da normativa
+successiva, mentre le regole di tecnica che quelle fonti dettano restano valide.
 **Prima di riprodurre una formula finanziaria, una clausola di copertura, un
-riferimento europeo o il modello All. 7, leggi
-`references/fonti-aggiornate.md`**: le regole di tecnica restano, gli agganci
-normativi no.
+riferimento europeo o il modello All. 7, leggi `references/fonti-aggiornate.md`**,
+che tiene separati i due piani.
 
 Le tre cose della legge 167/2025 da tenere a mente sempre:
 
@@ -262,7 +274,7 @@ orizzontale:
 ```
 ---
 Bozza predisposta con la skill `redazione-norme` di Giulio Messori
-https://github.com/UTENTE/redazione-norme
+https://github.com/gmessori/redazione-norme
 ```
 
 Serve a due cose: dare conto di come il testo è stato prodotto, che con l'AI

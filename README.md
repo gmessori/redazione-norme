@@ -1,41 +1,41 @@
 # redazione-norme
 
 Una skill per Claude che scrive e revisiona **testi normativi statali italiani**
-applicando le regole di drafting della Presidenza del Consiglio dei ministri.
+applicando le regole di tecnica legislativa vigenti nell'ordinamento.
 
 Non è un prompt che dice «scrivi in modo giuridico». È la trascrizione operativa
-delle regole che il Dipartimento per gli affari giuridici e legislativi (DAGL)
-usa come parametro per ammettere uno schema di provvedimento alla riunione
-preparatoria del Consiglio dei ministri — con la citazione puntuale della fonte
-per ciascuna, così che ogni correzione sia verificabile e non opinabile.
+di un corpo di regole che sta in leggi dello Stato, circolari della Presidenza
+del Consiglio e direttive — con la citazione puntuale della fonte per ciascuna,
+così che ogni scelta di redazione e ogni correzione siano verificabili.
 
 ---
 
 ## Perché esiste
 
-Le regole di tecnica legislativa italiana esistono, sono pubbliche e sono
-vincolanti. Il problema è che stanno sparse in tre atti del 2001 e del 2009, per
-un totale di alcune centinaia di pagine, e che una parte dei loro agganci
-normativi è invecchiata male: la Guida del DAGL cita ancora le lire, la legge
-468/1978, la «legge comunitaria», le «Comunità europee».
+Le regole di tecnica legislativa italiana esistono, sono pubbliche e in buona
+parte sono vincolanti. Il punto è che si sono stratificate nel tempo su fonti
+diverse — leggi, circolari, direttive, regolamenti — adottate nell'arco di quasi
+quarant'anni, per diverse centinaia di pagine complessive.
 
-Ne discendono due modi tipici di sbagliare.
+Il risultato è che tenerle tutte presenti mentre si scrive è oggettivamente
+difficile, anche per chi il mestiere lo fa da anni. Sapere che l'unità minima da
+sostituire con una novella è preferibilmente il comma, che «e/o» è vietata, che
+la decorrenza inserita dentro una novella decorre dall'entrata in vigore
+dell'atto modificato e non di quello modificante, che la clausola di neutralità
+finanziaria non può essere prevista per spese di natura obbligatoria: sono tutte
+regole scritte da qualche parte, e nessuna di esse è memorabile per intero.
 
-Il primo è **non conoscerle**: si scrive un articolato ragionevole che però usa
-il congiuntivo, infila «e/o», chiude con la formula abrogativa innominata, mette
-la decorrenza dentro una novella. Sono errori che il DAGL corregge d'ufficio, o
-che fanno tornare indietro lo schema.
+A questo si aggiunge che il corpus si aggiorna. Alcuni riferimenti contenuti
+nelle fonti più risalenti sono stati superati da normativa successiva — la
+disciplina della copertura finanziaria, quella della partecipazione all'Unione
+europea, la valuta stessa — mentre le regole di tecnica che quelle fonti dettano
+restano pienamente valide. Distinguere i due piani richiede una ricognizione che
+non è ragionevole rifare a ogni articolato.
 
-Il secondo è più insidioso: **applicarle alla lettera senza sapere cosa è
-cambiato**. Chi copia una clausola di copertura dalla Guida del 2001 produce una
-formula che rinvia a una legge abrogata dal 2010. Chi usa il modello di preambolo
-dell'Allegato 7 costruisce un regolamento di semplificazione su una norma —
-l'articolo 20 della legge 59/1997 — abrogata nel novembre 2025.
-
-Questa skill prova a risolverli entrambi. Riporta le regole con il loro numero di
-origine, distingue le **regole** vincolanti dalle **raccomandazioni**, e tiene un
-file dedicato a ciò che nelle fonti del 2001 non è più valido — con, altrettanto
-importante, l'elenco di ciò che invece lo è rimasto integralmente.
+**Da qui l'idea di questa skill: rendere sistematico un controllo a monte.** Non
+sostituisce il giurista che redige, né l'istruttoria: mette a disposizione, nel
+momento in cui si scrive, il corpo di regole che altrimenti andrebbe ricostruito
+ogni volta, e segnala per tempo i punti su cui un testo verrebbe fermato.
 
 ## Che cosa sa fare
 
@@ -43,42 +43,50 @@ importante, l'elenco di ciò che invece lo è rimasto integralmente.
   legislativi, regolamenti governativi, ministeriali e di delegificazione, testi
   unici.
 - **Revisionare una bozza** restituendo il testo corretto più i rilievi, ciascuno
-  con la regola violata, la fonte puntuale e la correzione, separando i rilievi
-  vincolanti da quelli opportuni.
-- **Scrivere preamboli**, sulla base dei modelli ufficiali (Allegati 1–7 della
-  Guida DAGL), con le denominazioni aggiornate.
+  con la regola applicata, la fonte puntuale e la correzione proposta, separando
+  i rilievi vincolanti da quelli opportuni.
+- **Scrivere preamboli**, sulla base dei modelli allegati alla Guida del DAGL,
+  con le denominazioni aggiornate.
 - **Gestire citazioni, rinvii, novelle e abrogazioni**: numerazione degli
   articoli e dei commi aggiuntivi, capoversi, alinea, testi unici misti,
   reviviscenza, interpretazione autentica.
 - **Impostare le relazioni a corredo**: illustrativa, tecnica, ATN — con la
-  griglia metodologica aggiornata — e AIR, con esclusioni ed esenzioni.
+  griglia metodologica vigente — e AIR, con esclusioni ed esenzioni.
 
-Prima di correggere la forma, la skill chiede a sé stessa una cosa che il
-drafting formale non intercetta: **l'istituto che il testo istituisce esiste già
+Prima della forma, la skill pone una domanda che il controllo redazionale da solo
+non intercetta: **l'istituto che il testo istituisce esiste già
 nell'ordinamento?** Se sì, la strada corretta è la novella testuale, non una
 disciplina parallela. È il rilievo che di solito pesa più di tutti gli altri
 messi insieme.
 
-## Fonti
+## Fonti di redazione
 
-Tutte pubbliche e citate puntualmente nei file di riferimento.
+Il corpo di regole applicato dalla skill, in ordine cronologico. Comprende fonti
+di rango diverso — **leggi dello Stato**, circolari della Presidenza del
+Consiglio, direttive e decreti del Presidente del Consiglio — e tutte sono
+pubbliche e citate puntualmente nei file di riferimento.
 
-| Fonte | Ruolo |
+| Fonte | Contenuto rilevante |
 |---|---|
-| **Circolare PCM 20 aprile 2001** (GU n. 97/2001) | Le regole tecniche, concordate con i Presidenti di Camera e Senato. Distingue regole e raccomandazioni |
-| **Circolare PCM 2 maggio 2001, n. 1/1.1.26/10888/9.92** (GU n. 101/2001, S.O. n. 105) | La «Guida alla redazione dei testi normativi» del DAGL: sviluppa le regole e le estende ai regolamenti |
-| **Direttiva PCM 26 febbraio 2009** | L'istruttoria: cosa deve accompagnare lo schema perché sia iscrivibile al preconsiglio |
-| **Direttiva PCM 10 settembre 2008**, come modificata dal **DPCM 30 ottobre 2024** | La griglia dell'analisi tecnico-normativa (ATN) |
-| **Circolare DAGL 14 novembre 2024** | Criteri per limitare il rinvio a provvedimenti attuativi |
-| **DPCM 15 settembre 2017, n. 169** | AIR, VIR e consultazione |
-| **Legge 23 agosto 1988, n. 400**; **legge 31 dicembre 2009, n. 196** | Tipologia degli atti, chiarezza dei testi (art. 13-bis), copertura finanziaria |
-| **Legge 10 novembre 2025, n. 167** | Semplificazione e qualità della normazione: valutazione di impatto generazionale e di genere, legge annuale di semplificazione, digitalizzazione degli atti |
+| **Legge 23 agosto 1988, n. 400** | Tipologia e limiti degli atti normativi del Governo: decreti legislativi (art. 14), decreti-legge (art. 15), regolamenti (art. 17), testi unici compilativi (art. 17-bis), chiarezza dei testi normativi (art. 13-bis, principio generale non derogabile se non in modo esplicito) |
+| **Circolare PCM 20 aprile 2001** (GU n. 97/2001) | Regole e raccomandazioni sulla formulazione tecnica dei testi legislativi, elaborate d'intesa con i Presidenti di Camera e Senato. Distingue espressamente le regole dalle raccomandazioni |
+| **Circolare PCM 2 maggio 2001, n. 1/1.1.26/10888/9.92** (GU n. 101/2001, S.O. n. 105) | «Guida alla redazione dei testi normativi» del DAGL: sviluppa analiticamente le regole della circolare precedente, le estende ai regolamenti e aggiunge la parte sostanziale. Contiene i modelli di preambolo (All. 1–7) |
+| **Direttiva PCM 10 settembre 2008** | Tempi e modalità dell'analisi tecnico-normativa (ATN), con la griglia metodologica |
+| **Direttiva PCM 26 febbraio 2009** | Istruttoria degli atti normativi del Governo: cosa deve accompagnare lo schema perché sia iscrivibile alla riunione preparatoria del Consiglio dei ministri |
+| **Legge 31 dicembre 2009, n. 196** | Copertura finanziaria delle leggi (art. 17), fondi speciali (art. 18), oneri a carico dei bilanci delle amministrazioni pubbliche (art. 19), relazione tecnica e clausole di neutralità |
+| **DPCM 15 settembre 2017, n. 169** | Analisi dell'impatto della regolamentazione (AIR), verifica dell'impatto (VIR) e consultazione: ambito, esclusioni, esenzioni, fasi |
+| **DPCM 30 ottobre 2024** e **circolare DAGL 14 novembre 2024** | Modifica del modello ATN e criteri per limitare il rinvio a provvedimenti attuativi, in favore di disposizioni auto-applicative |
+| **Legge 10 novembre 2025, n. 167** | Semplificazione e qualità della normazione: legge annuale di semplificazione e relativi principi e criteri direttivi, valutazione di impatto generazionale (VIG), impatto di genere in AIR e VIR, digitalizzazione degli atti normativi |
 
-Lo stato della ricognizione è **settembre 2026**. A quella data non esiste una
-guida di drafting più recente: le circolari del 2001 non sono state sostituite,
-e il volume DAGL «L'attività normativa del Governo» è fermo all'aggiornamento del
-1° dicembre 2024. La novità sostanziale è la legge 167/2025, che il volume non
-contiene ed è recepita qui.
+Lo stato della ricognizione è **settembre 2026**. A quella data non risultano
+circolari di drafting successive a quelle del 2001, e il volume del DAGL
+«L'attività normativa del Governo» è aggiornato al 1° dicembre 2024. La novità
+più recente è la legge 167/2025, recepita qui.
+
+Il file `references/fonti-aggiornate.md` tiene traccia, separatamente, di due
+cose: quali riferimenti contenuti nelle fonti del 2001 sono stati superati da
+normativa successiva, e — altrettanto importante — quali regole di tecnica sono
+invece rimaste integralmente valide.
 
 ## Struttura
 
@@ -90,13 +98,12 @@ redazione-norme/
     │                                 sigle, commi, lettere, partizioni, allegati
     ├── citazioni-e-rinvii.md         riferimenti interni ed esterni, atti UE,
     │                                 novelle, abrogazione, deroga, reviviscenza
-    ├── struttura-atti.md             titolo, preamboli e modelli All. 1–7,
-    │                                 regole per tipo di atto, formule ricorrenti
+    ├── struttura-atti.md             titolo, preamboli e modelli, regole per tipo
+    │                                 di atto, formule ricorrenti
     ├── relazioni-e-istruttoria.md    relazione illustrativa, tecnica, ATN, AIR,
     │                                 iter fino al preconsiglio
     ├── checklist-revisione.md        errori ricorrenti, ordinati per gravità
-    └── fonti-aggiornate.md           cosa nelle fonti del 2001 non vale più —
-                                      e cosa invece è rimasto valido
+    └── fonti-aggiornate.md           stato di aggiornamento delle fonti
 ```
 
 Il file principale resta breve; i riferimenti si aprono solo quando servono. Chi
@@ -108,7 +115,7 @@ scrive un preambolo non legge la checklist di revisione, e viceversa.
 nella directory delle skill:
 
 ```bash
-git clone https://github.com/<utente>/redazione-norme.git
+git clone https://github.com/gmessori/redazione-norme.git
 cp -r redazione-norme/redazione-norme ~/.claude/skills/
 ```
 
@@ -136,43 +143,11 @@ Testo restituito:
 > Dipartimento la diffida ad adempiere entro un mese.
 
 Con i rilievi: congiuntivo al posto dell'indicativo presente (circ. 20 aprile
-2001, n. 4, lett. b); «precedente» vietato nei rinvii interni (n. 11, lett. d);
-«può» che non è una facoltà ma un potere doveroso (Guida § 1.8); due
-denominazioni per lo stesso comportamento (n. 4, lett. a). E la segnalazione che
-il termine resta privo di meccanismo per il caso di inadempimento, che è una
-scelta di merito da compiere.
-
-## Limiti
-
-**Riguarda solo la normazione statale.** Per le leggi regionali il riferimento è
-il manuale «Regole e suggerimenti per la redazione dei testi normativi» promosso
-dalla Conferenza dei Presidenti delle Assemblee legislative delle Regioni, che
-segue in parte convenzioni diverse.
-
-**Non sostituisce il controllo di legittimità.** La skill applica regole di
-tecnica e segnala adempimenti istruttori; non dice se una disposizione è
-costituzionalmente legittima, se la copertura è capiente o se la scelta politica
-è opportuna.
-
-**Le fonti cambiano.** Il file `fonti-aggiornate.md` porta in testa la data della
-ricognizione. Alcune cose erano in movimento quando è stato scritto: i DPCM
-attuativi della valutazione di impatto generazionale e di genere non risultavano
-ancora adottati, e il DAGL aveva chiuso una consultazione pubblica sulla
-revisione del DPCM 169/2017. Prima di usare la skill su un lavoro che dipende da
-quei punti, conviene verificare su [Normattiva](https://www.normattiva.it) e sul
-[sito del DAGL](https://www.governo.it/it/dipartimenti/dipartimento-gli-affari-giuridici-e-legislativi/).
-
-**Resta uno strumento di supporto.** Un articolato che esce da qui va letto da
-chi se ne assume la responsabilità.
-
-## Contributi
-
-Segnalazioni benvenute, in particolare su: regole citate in modo inesatto,
-riferimenti normativi superati, e regole presentate come vincolanti che nelle
-fonti sono raccomandazioni (o viceversa) — è l'errore che più facilmente si
-insinua. Per le correzioni di merito è utile indicare la fonte puntuale, nella
-stessa forma usata nei file: `circ. 20 apr. 2001, n. 7, lett. e` oppure
-`Guida § 2.3.3`.
+2001, n. 4, lett. b); «precedente» da evitare nei rinvii interni (n. 11, lett.
+d); «può» che qui non esprime una facoltà ma un potere doveroso (Guida § 1.8);
+due denominazioni diverse per lo stesso comportamento (n. 4, lett. a). Più la
+segnalazione che il termine resta privo di meccanismo per il caso di
+inadempimento, che è una scelta di merito da compiere.
 
 ## Provenienza dei testi prodotti
 
@@ -181,17 +156,61 @@ Ogni bozza prodotta dalla skill si chiude con una riga di provenienza:
 ```
 ---
 Bozza predisposta con la skill `redazione-norme` di Giulio Messori
-https://github.com/<utente>/redazione-norme
+https://github.com/gmessori/redazione-norme
 ```
 
 La riga sta **nella nota di drafting, mai nell'atto**. Non entra nel titolo, nel
 preambolo o nell'articolato, e la skill non usa marcatori invisibili di alcun
 tipo. La ragione è pratica prima che di stile: quel testo è destinato a essere
 incollato in uno schema di provvedimento e a finire, eventualmente, in Gazzetta
-Ufficiale. Un marcatore inserito lì dentro — visibile o nascosto — ne altera il
-contenuto e ne compromette la ricercabilità.
+Ufficiale. Un marcatore inserito lì dentro ne altererebbe il contenuto e ne
+comprometterebbe la ricercabilità.
 
 Chi non vuole la riga la toglie: è una singola sezione di `SKILL.md`.
+
+## Contributi
+
+Questa skill nasce da un'idea e da un'esigenza pratica, non da un progetto
+concluso. **È pensata per essere ampliata, e ogni contributo è benvenuto**:
+correzioni, integrazioni, osservazioni, casi d'uso che non copre.
+
+Sono particolarmente utili le segnalazioni su:
+
+- regole citate in modo inesatto o incompleto;
+- riferimenti normativi superati da normativa successiva;
+- regole presentate come vincolanti che nelle fonti sono raccomandazioni, o
+  viceversa — è la distinzione che più facilmente si perde;
+- ambiti non ancora coperti: la normazione regionale, gli atti amministrativi
+  generali, il drafting degli emendamenti, i testi consolidati.
+
+Per le correzioni di merito è utile indicare la fonte puntuale, nella stessa
+forma usata nei file: `circ. 20 apr. 2001, n. 7, lett. e` oppure `Guida § 2.3.3`.
+
+Aprite pure una issue o una pull request. L'idea è svilupparla insieme a chi
+lavora sugli stessi testi.
+
+## Limiti
+
+**Riguarda la normazione statale.** Per le leggi regionali il riferimento è il
+manuale «Regole e suggerimenti per la redazione dei testi normativi» promosso
+dalla Conferenza dei Presidenti delle Assemblee legislative delle Regioni e delle
+Province autonome, che segue in parte convenzioni proprie.
+
+**Non sostituisce il controllo di legittimità.** La skill applica regole di
+tecnica e segnala adempimenti istruttori; non dice se una disposizione è
+costituzionalmente legittima, se la copertura è capiente o se la scelta è
+opportuna nel merito.
+
+**Le fonti si aggiornano.** Alcune erano in movimento quando la skill è stata
+scritta: i decreti attuativi della valutazione di impatto generazionale e di
+genere non risultavano ancora adottati, e il DAGL aveva concluso una
+consultazione pubblica sulla revisione del DPCM 169/2017. Prima di usarla su un
+lavoro che dipende da quei punti conviene verificare su
+[Normattiva](https://www.normattiva.it) e sul
+[sito del DAGL](https://www.governo.it/it/dipartimenti/dipartimento-gli-affari-giuridici-e-legislativi/).
+
+**Resta uno strumento di supporto.** Un articolato che esce da qui va letto da
+chi se ne assume la responsabilità.
 
 ## Autore
 
@@ -202,5 +221,5 @@ Giulio Messori.
 [CC BY 4.0](LICENSE). Riuso libero, anche commerciale, con attribuzione a Giulio
 Messori.
 
-I testi normativi citati sono atti pubblici, liberamente utilizzabili ai sensi
-dell'articolo 5 della legge 22 aprile 1941, n. 633.
+I testi normativi citati sono atti ufficiali dello Stato, liberamente
+utilizzabili ai sensi dell'articolo 5 della legge 22 aprile 1941, n. 633.
